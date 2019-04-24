@@ -2,6 +2,7 @@
   "name": "typescript-node12-modules-example",
   "version": "0.0.0",
   "author": "kevinpollet <pollet.kevin@gmail.com>",
+  "private": true,
   "license": "MIT",
   "type": "module",
   "scripts": {
