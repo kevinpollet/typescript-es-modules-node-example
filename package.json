@@ -1,0 +1,26 @@
+{
+  "name": "typescript-node12-modules-example",
+  "version": "0.0.0",
+  "author": "kevinpollet <pollet.kevin@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "start": "node --experimental-modules lib/server.js",
+    "format": "prettier --write 'src/**/*.ts' '*.{json,md}'",
+    "prestart": "run-s build",
+    "prebuild": "run-s clean"
+  },
+  "devDependencies": {
+    "@kevinpollet/tsconfig": "0.1.0",
+    "@types/node": "11.13.7",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.17.0",
+    "rimraf": "2.6.3",
+    "typescript": "3.4.5"
+  },
+  "dependencies": {
+    "fastify": "2.3.0"
+  }
+}
