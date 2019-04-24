@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc",
-    "start": "node --experimental-modules lib/server.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node lib/server.js",
     "format": "prettier --write 'src/**/*.ts' '*.{json,md}'",
     "prestart": "run-s build",
     "prebuild": "run-s clean"
