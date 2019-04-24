@@ -6,7 +6,7 @@
  */
 
 import fastify from "fastify";
-import { sayHelloWorld } from "./sayHelloWorld"
+import { sayHelloWorld } from "./sayHelloWorld";
 
 fastify({ logger: true })
   .get("*", async (_, reply) => reply.send({ message: sayHelloWorld() }))
