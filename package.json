@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "fastify": "2.3.0"
+  },
+  "prettier": {
+    "trailingComma": "es5"
   }
 }
