@@ -5,6 +5,19 @@
   "private": true,
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/kevinpollet/typescript-node12-modules-example#readme",
+  "bugs": {
+    "url": "https://github.com/kevinpollet/typescript-node12-modules-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinpollet/typescript-node12-modules-example.git"
+  },
+  "keywords": [
+    "typescript",
+    "es-modules",
+    "nodejs"
+  ],
   "scripts": {
     "clean": "rimraf lib",
     "build": "tsc",

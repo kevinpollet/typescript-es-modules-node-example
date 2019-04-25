@@ -1,11 +1,12 @@
 {
   "extends": "@kevinpollet/tsconfig",
   "compilerOptions": {
+    "declaration": false,
     "lib": ["es2018"],
-    "target": "es2018",
-    "outDir": "lib",
     "module": "es2015",
-    "declaration": false
+    "outDir": "lib",
+    "rootDir": "src",
+    "target": "es2018"
   },
   "include": ["src"]
 }
