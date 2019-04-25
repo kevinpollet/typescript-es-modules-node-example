@@ -1,3 +1,5 @@
+# Running TypeScript ES modules with Node.js
+
 Following [Announcing a new experimental modules](https://medium.com/@nodejs/announcing-a-new-experimental-modules-1be8d2d6c2ff) post, this repository is an example of a TypeScript app running with the new `experimental modules` feature shipped with Node.js 12. As explained in the linked post, it's now possible to use `import` and `export` syntax in `js` files, so ES modules compiled from TypeScript can be used without modifications 😎
 
 ## Node.js config
