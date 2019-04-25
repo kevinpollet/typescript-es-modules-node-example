@@ -8,7 +8,11 @@ Following [Announcing a new experimental modules](https://medium.com/@nodejs/ann
 - `--experimental-modules`: Flag to enable new `experimental modules` feature
 - `--es-module-specifier-resolution=node`: By default, file extensions are mandatory in import, this flag enable CommonJS-style automatic extension resolution behavior. This flag is required because TypeScript do not add imported file extension in compiled code.
 
-## Getting Started
+## TypeScript config
+
+- `module: ES2015`: Set the module code generation to `ES2015`, aka `ES6`, see [tsconfig.json](./tsconfig.json)
+
+## Run the app
 
 1. Install [Node.js 12](https://nodejs.org/en/blog/release/v12.0.0/) or type `nvm use` if you use [nvm](https://github.com/creationix/nvm)
 2. Start HTTP server with: `npm run start`
@@ -25,7 +29,7 @@ You should see the following JSON message:
 ## Scripts
 
 - `clean`: Remove generated files
-- `build`: Compile TypeScript sources to ES2018
+- `build`: Compile TypeScript sources to `ES2018`
 - `start`: Start HTTP server with `--experimental-modules` and `--es-module-specifier-resolution=node`
 
 ## License
