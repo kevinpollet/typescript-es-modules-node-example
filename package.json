@@ -18,7 +18,8 @@
     "build": "lerna run build",
     "format": "prettier --write 'packages/**/*.{json,md,ts}' '*.{json,md,ts}' '!lib'",
     "start": "node --experimental-modules --es-module-specifier-resolution=node packages/app/lib/app.js",
-    "prestart": "npm run bootstrap && npm run build"
+    "prebuild": "npm run bootstrap",
+    "prestart": "npm run build"
   },
   "devDependencies": {
     "@kevinpollet/tsconfig": "0.1.0",
