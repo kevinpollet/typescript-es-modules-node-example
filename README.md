@@ -2,35 +2,26 @@
 
 Following [Announcing a new experimental modules](https://medium.com/@nodejs/announcing-a-new-experimental-modules-1be8d2d6c2ff) post, this repository is an example of a TypeScript app running with the new `experimental modules` feature shipped with Node.js 12. As explained in the linked post, it's now possible to use `import` and `export` syntax in `js` files, so ES Modules transpiled from TypeScript can be used out of the box 😎
 
-## 🌳 Project tree
+## Project tree
 
 ```
 .
-├── LICENSE.md
-├── README.md
 ├── lerna.json
 ├── package-lock.json
 ├── package.json
 ├── packages
 │   ├── app //--> TypeScript app transpiled as an ES Module, using es-module dependency
-│   │   ├── README.md
 │   │   ├── package-lock.json
 │   │   ├── package.json
-│   │   ├── src
-│   │   │   ├── app.ts
-│   │   │   └── sayHelloLocal.ts
 │   │   └── tsconfig.json
 │   └── es-module //--> ES Module written in TypeScript
-│       ├── README.md
 │       ├── package-lock.json
 │       ├── package.json
-│       ├── src
-│       │   └── index.ts
 │       └── tsconfig.json
 └── tsconfig.settings.json
 ```
 
-## 🛠️ Config
+## Config
 
 ### Node.js
 
@@ -42,7 +33,7 @@ Following [Announcing a new experimental modules](https://medium.com/@nodejs/ann
 
 - `module: "es2015"`: Set the module code generation to `ES2015`, aka `ES6`, see inherited [tsconfig.settings.json](./tsconfig.settings.json)
 
-## 🚀 Run app
+## Run app
 
 1. Install [Node.js 12](https://nodejs.org/en/blog/release/v12.0.0/) or type `nvm use` if you use [nvm](https://github.com/creationix/nvm)
 2. Install project dependencies with `npm install`
