@@ -5,9 +5,12 @@
  * found in the LICENSE.md file.
  */
 
+import { sayHello } from "es-module";
 import fastify from "fastify";
-import { sayHelloWorld } from "./sayHelloWorld";
+import { sayHelloLocal } from "./sayHelloLocal";
 
 fastify({ logger: true })
-  .get("*", async (_, reply) => reply.send({ message: sayHelloWorld() }))
+  .get("*", async (_, reply) =>
+    reply.send({ messages: [sayHello(), sayHelloLocal()] })
+  )
   .listen(3000);

@@ -1,0 +1,35 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "author": "kevinpollet <pollet.kevin@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kevinpollet/typescript-es-modules-node-example/tree/master/packages/server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinpollet/typescript-node12-modules-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinpollet/typescript-node12-modules-example/issues"
+  },
+  "main": "lib/app.js",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node lib/server.js",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "rimraf": "2.6.3",
+    "typescript": "3.4.5"
+  },
+  "dependencies": {
+    "@types/node": "11.13.8",
+    "es-module": "0.0.0",
+    "fastify": "2.3.0"
+  }
+}

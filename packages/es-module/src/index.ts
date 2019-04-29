@@ -5,4 +5,4 @@
  * found in the LICENSE.md file.
  */
 
-export const sayHelloWorld = () => "Hello World";
+export const sayHello = () => "Hello from ES Module dependency";

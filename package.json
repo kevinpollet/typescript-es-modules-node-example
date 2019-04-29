@@ -4,7 +4,6 @@
   "author": "kevinpollet <pollet.kevin@gmail.com>",
   "private": true,
   "license": "MIT",
-  "type": "module",
   "homepage": "https://github.com/kevinpollet/typescript-es-modules-node-example#readme",
   "bugs": {
     "url": "https://github.com/kevinpollet/typescript-es-modules-node-example/issues"
@@ -13,29 +12,31 @@
     "type": "git",
     "url": "git+https://github.com/kevinpollet/typescript-es-modules-node-example.git"
   },
-  "keywords": [
-    "typescript",
-    "es-modules",
-    "nodejs"
-  ],
   "scripts": {
-    "clean": "rimraf lib",
-    "build": "tsc",
-    "start": "node --experimental-modules --es-module-specifier-resolution=node lib/server.js",
-    "format": "prettier --write 'src/**/*.ts' '*.{json,md}'",
-    "prestart": "run-s build",
-    "prebuild": "run-s clean"
+    "clean": "lerna run clean && lerna clean --yes",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "format": "prettier --write 'packages/**/*.{json,md,ts}' '*.{json,md,ts}' '!lib'",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node packages/app/lib/app.js",
+    "prestart": "npm run bootstrap && npm run build"
   },
   "devDependencies": {
     "@kevinpollet/tsconfig": "0.1.0",
-    "@types/node": "11.13.7",
-    "npm-run-all": "4.1.5",
-    "prettier": "1.17.0",
-    "rimraf": "2.6.3",
-    "typescript": "3.4.5"
+    "husky": "2.1.0",
+    "lerna": "3.13.4",
+    "lint-staged": "8.1.5",
+    "prettier": "1.17.0"
   },
-  "dependencies": {
-    "fastify": "2.3.0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,ts,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "prettier": {
     "trailingComma": "es5"

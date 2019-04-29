@@ -1,0 +1,30 @@
+{
+  "name": "es-module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ES Module transpiled with TypeScript",
+  "author": "kevinpollet <pollet.kevin@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kevinpollet/typescript-es-modules-node-example/tree/master/packages/es-module#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinpollet/typescript-node12-modules-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinpollet/typescript-node12-modules-example/issues"
+  },
+  "main": "lib/index.js",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "rimraf": "2.6.3",
+    "typescript": "3.4.5"
+  }
+}
