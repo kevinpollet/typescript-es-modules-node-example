@@ -42,7 +42,7 @@ Following [Announcing a new experimental modules](https://medium.com/@nodejs/ann
 
 - `module: "es2015"`: Set the module code generation to `ES2015`, aka `ES6`, see inherited [tsconfig.settings.json](./tsconfig.settings.json)
 
-## 🚀 Run the app
+## 🚀 Run app
 
 1. Install [Node.js 12](https://nodejs.org/en/blog/release/v12.0.0/) or type `nvm use` if you use [nvm](https://github.com/creationix/nvm)
 2. Install project dependencies with `npm install`
