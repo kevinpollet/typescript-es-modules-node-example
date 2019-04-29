@@ -1,5 +1,7 @@
 # Running TypeScript ES Modules with Node.js
 
+[![Build Status](https://travis-ci.com/kevinpollet/typescript-es-modules-node-example.svg?branch=master)](https://travis-ci.com/kevinpollet/typescript-es-modules-node-example)
+
 Following [Announcing a new experimental modules](https://medium.com/@nodejs/announcing-a-new-experimental-modules-1be8d2d6c2ff) post, this repository is an example of a TypeScript app running with the new `experimental modules` feature shipped with Node.js 12. As explained in the linked post, it's now possible to use `import` and `export` syntax in `js` files, so ES Modules transpiled from TypeScript can be used out of the box 😎
 
 ## Project tree
