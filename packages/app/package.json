@@ -25,11 +25,11 @@
   },
   "devDependencies": {
     "rimraf": "2.6.3",
-    "typescript": "3.4.5"
+    "typescript": "3.5.1"
   },
   "dependencies": {
-    "@types/node": "11.13.8",
+    "@types/node": "12.0.8",
     "es-module": "0.0.0",
-    "fastify": "2.3.0"
+    "fastify": "2.4.1"
   }
 }
