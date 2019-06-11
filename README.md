@@ -33,16 +33,16 @@ Following [Announcing a new experimental modules](https://medium.com/@nodejs/ann
 
 ### TypeScript
 
-- `module: "es2015"`: Set the module code generation to `ES2015`, aka `ES6`, see inherited [tsconfig.settings.json](./tsconfig.settings.json)
+- `module: "esnext"`: Set the module code generation to `esnext`, see inherited [tsconfig.settings.json](./tsconfig.settings.json)
 
 ## Run app
 
 1. Install [Node.js 12](https://nodejs.org/en/blog/release/v12.0.0/) or type `nvm use` if you use [nvm](https://github.com/creationix/nvm)
-2. Install project dependencies with `npm install`
+2. Install project dependencies with: `npm install`
 3. Start app with: `npm run start`
-4. Browse `http://localhost:3000`
+4. Browse http://localhost:3000
 
-You should see the following JSON message:
+You should see the following JSON response:
 
 ```json
 {
