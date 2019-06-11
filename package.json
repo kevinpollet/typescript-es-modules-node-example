@@ -5,13 +5,8 @@
   "private": true,
   "license": "MIT",
   "homepage": "https://github.com/kevinpollet/typescript-es-modules-node-example#readme",
-  "bugs": {
-    "url": "https://github.com/kevinpollet/typescript-es-modules-node-example/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kevinpollet/typescript-es-modules-node-example.git"
-  },
+  "bugs": "https://github.com/kevinpollet/typescript-es-modules-node-example/issues",
+  "repository": "github:kevinpollet/typescript-es-modules-node-example",
   "scripts": {
     "clean": "lerna run clean && lerna clean --yes",
     "bootstrap": "lerna bootstrap",
