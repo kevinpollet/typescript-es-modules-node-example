@@ -52,4 +52,4 @@ You should see the following JSON response:
 
 ## License
 
-[MIT licensed](./License.md).
+[MIT](./License.md) © kevinpollet
