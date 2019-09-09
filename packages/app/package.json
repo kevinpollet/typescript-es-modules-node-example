@@ -24,12 +24,12 @@
     "prebuild": "npm run clean"
   },
   "devDependencies": {
-    "rimraf": "2.6.3",
-    "typescript": "3.5.1"
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.2"
   },
   "dependencies": {
-    "@types/node": "12.0.8",
+    "@types/node": "^12.7.4",
     "es-module": "0.0.0",
-    "fastify": "2.4.1"
+    "fastify": "^2.8.0"
   }
 }

@@ -24,7 +24,7 @@
     "prebuild": "npm run clean"
   },
   "devDependencies": {
-    "rimraf": "2.6.3",
-    "typescript": "3.5.1"
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.2"
   }
 }
