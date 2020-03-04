@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/kevinpollet/typescript-es-modules-node-example/workflows/Build/badge.svg)](https://github.com/kevinpollet/typescript-es-modules-node-example/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
-Following [Announcing a new experimental modules](https://medium.com/@nodejs/announcing-a-new-experimental-modules-1be8d2d6c2ff) post, this repository is an example of a TypeScript app running with the new `experimental modules` feature shipped with Node.js 12. As explained in the linked post, it's now possible to use `import` and `export` syntax in `js` files, so ES Modules transpiled from TypeScript can be used out of the box 😎
+Based on the [Announcing a new experimental modules](https://medium.com/@nodejs/announcing-a-new-experimental-modules-1be8d2d6c2ff) post from the Node team, this repository is an example of a TypeScript app running with the new `experimental modules` feature shipped with Node.js 12. As explained in the linked post, it's now possible to use `import` and `export` syntax in `.js` files, so ES Modules transpiled from TypeScript can be used out of the box 😎
 
 ## Project tree
 
@@ -30,7 +30,7 @@ Following [Announcing a new experimental modules](https://medium.com/@nodejs/ann
 
 - `type: module`: New package.json field to treat all `.js` files in project as ES Modules, see [app](./packages/app/package.json) and [es-module](./packages/es-module/package.json) files.
 - `--experimental-modules`: Flag to enable new experimental modules feature.
-- `--es-module-specifier-resolution=node`: By default, file extensions are mandatory in import, this flag enable CommonJS-style automatic extension resolution behavior. This flag is required because TypeScript do not add imported file extension in transpiled code.
+- `--es-module-specifier-resolution=node`: By default, file extensions are mandatory in import. This flag enable CommonJS-style automatic extension resolution behavior. This flag is required because [TypeScript does not add imported file extension in transpiled code](https://github.com/microsoft/TypeScript/issues/16577).
 
 ### TypeScript
 
